@@ -24,7 +24,7 @@ def get_cert_data_hash(cert):
 
 def verify_cert(name, certs, trusted_cas):
     if len(certs) < 1:
-        return False
+        return False, None
     cert = certs[0]
 
     if name != cert["data"]["name"]:
@@ -42,12 +42,12 @@ def verify_cert(name, certs, trusted_cas):
         else:
             valid, key = verify_cert(issuer, certs[1:], trusted_cas)
             if not valid:
-                return False
+                return False, None
 
         pkcs1_15.new(key).verify(h, unhexlify(cert["sig"]))
         return True, RSA.import_key(unhexlify(cert["data"]["pub_key"]))
     except (ValueError, TypeError):
-        return False, False
+        return False, None
 
 
 if __name__ == "__main__":
