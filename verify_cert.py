@@ -12,8 +12,9 @@ Q0QMmlX5kyAtlNaX89JY9PSGKCsrGJJxCOJPuOaK2QfDKnODPrM4JdHNa5R+JBkI
 VWcuG7xNp+4/0h6dkwIDAQAB
 -----END PUBLIC KEY-----"""
 
+trusted_ca_name = "bigca.com"
 trusted_cas = {
-    "bigca.com": RSA.import_key(ca_public_key_str),
+    trusted_ca_name : RSA.import_key(ca_public_key_str),
 }
 
 
