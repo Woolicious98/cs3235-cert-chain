@@ -79,7 +79,7 @@ If a filename is not given, the certificate is read from stdin.
 
 ## Academic Honesty
 
-We expect that all students will submit their own answers using code they have written themselves. Despite the fixed inputs, the correct solution to this problem uses randomized encryption, and thus any cheating will become very obvious. Please don't do it. Write your own answers, and ask the TAs / the forum if you run into any problems.
+We expect that all students will submit their own answers using code they have written themselves. Despite the fixed inputs, the correct solution to this problem uses randomized encryption, and thus any cheating will become very obvious. Please don't cheat, it's not worth it. Write your own answers, and ask the TAs / the forum if you run into any problems.
 
 # Note for collaborators
 
