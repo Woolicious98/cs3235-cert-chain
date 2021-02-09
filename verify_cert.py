@@ -14,7 +14,7 @@ VWcuG7xNp+4/0h6dkwIDAQAB
 
 trusted_ca_name = "bigca.com"
 trusted_cas = {
-    trusted_ca_name : RSA.import_key(ca_public_key_str),
+    trusted_ca_name: RSA.import_key(ca_public_key_str),
 }
 
 
