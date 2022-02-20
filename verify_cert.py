@@ -62,8 +62,10 @@ if __name__ == "__main__":
     file = sys.stdin
     if len(sys.argv) == 3:
         file = open(sys.argv[2], "r")
-
+    
+    print("Loading JSON file...")
     cert = json.loads(file.read())
+    print("JSON file loaded.")
     valid, key = verify_cert(name, cert, trusted_cas)
     if valid:
         print("Certificate is valid and has key:")
